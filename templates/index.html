@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
 {%block title%} Home Page{%endblock%}
+
+{% block header %}
+    <h1> Home</h1>
+
+{% endblock%}
+
 {% block content%}
+
 {% for post in posts %}
+
     <article class="post">
         <header>
             <div>
